@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    NSMutableArray *items;
+}
 
+@property (weak, nonatomic) IBOutlet UITextField *txtItem;
+
+@property (weak, nonatomic) IBOutlet UITableView *tblItems;
+
+
+- (IBAction)addItemPressed:(id)sender;
 
 @end
 
